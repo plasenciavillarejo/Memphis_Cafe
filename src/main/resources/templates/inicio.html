@@ -4,8 +4,8 @@
 
 <head th:replace="layout/layout :: head"></head>
 
-<body style="background-color: #eeeeee; width: 100%" >
-
+<body style="background-color: #eeeeee;  width: 100%" >
+<!-- background-image:url('/images/logoMemphis.png'); opacity:1; -->
 	<!--  <header th:replace="layout/layout :: header"></header>  -->
 
 	<!-- Py-4 : Nos da un margen de anchura en el "listado de clientes". -->
@@ -27,7 +27,7 @@
 				<div class="accordion accordion-flush"
 					id="accordionFlushExample">
 
-					<div class="accordion-item">
+					<div class="accordion-item ">
 						<h2 class="accordion-header" id="flush-headingOne">
 							<button
 								class="accordion-button collapsed btn btn-outline-success btn-sm"
@@ -125,8 +125,27 @@
 							</div>
 						</div>
 					</div>
+					
+					
+				<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#cafeseinfusiones" aria-expanded="false"
+								aria-controls="flush-collapseThree">Café/Infusiones</button>
+						</h2>
+						<div id="cafeseinfusiones" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								Se mostrará Cafés e Infusiones.
+								<code>.accordion-flush</code>
+							</div>
+						</div>
+					</div>	
+					
 				</div>
-
 			</div>
 		</div>
 	</div>
