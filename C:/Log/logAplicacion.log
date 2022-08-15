@@ -5367,3 +5367,6 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2022-08-15 23:03:10,500 [http-nio-8080-exec-10] INFO  com.memphis.cafe.controllers.SnsCrucesController             : 
 
 2022-08-15 23:03:10,501 [http-nio-8080-exec-10] ERROR com.memphis.cafe.controllers.SnsCrucesController             : Leyendo la informacion inicial
+2022-08-15 23:05:37,913 [http-nio-8080-exec-5] INFO  com.memphis.cafe.controllers.SnsCrucesController             : 
+
+2022-08-15 23:05:37,913 [http-nio-8080-exec-5] ERROR com.memphis.cafe.controllers.SnsCrucesController             : Leyendo la informacion inicial
