@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- A�adimos el nameSpace de seguridad de Thymeleaf -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout/layout :: head"></head>
+
+<body style="background-color: #eeeeee;">
+
+	<!--  <header th:replace="layout/layout :: header"></header>  -->
+
+	<!-- Py-4 : Nos da un margen de anchura en el "listado de clientes". -->
+	<div class="container py-4">
+		<img th:src="@{/images/logoMemphis.png}"
+			class="rounded mx-auto d-block" alt="Logo Memphis"
+			style="max-width: 400px; width: 100%; margin-bottom: 20px;">
+		<!-- bg-light: Le da un fondo de color a la tabla grisaceo -->
+		<div class="card bg-light">
+			<div class="card-header" style="text-align: center;">
+				<span style="font-family: Trebuchet MS;">Café & Copas -
+					Memphis</span>
+			</div>
+			<div class="card-body col text-center">
+
+				<!-- Clase Acordeon para los Sub-Menus -->
+				<!-- ################################# -->
+
+				<div class="accordion accordion-flush"
+					id="accordionFlushExample">
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#desayunos" aria-expanded="false"
+								aria-controls="flush-collapseOne">Desayunos</button>
+						</h2>
+						<div id="desayunos" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<table id="tablaDesayunos" style="width:100%;">
+									<thead>
+										<tr>
+											<th></th>
+											<th style="width:80px; text-align:right;">
+												<strong>Precio</strong> 
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- <tr th:each="country : ${countryList}"> -->
+										<tr>
+											<td style="text-align:left; padding-bottom:6px;">Tostada con aceite y tomate (1/2)</td>
+											<td style="text-align:right; vertical-align:top;">1 €</td>
+										</tr>
+										<tr>
+											<td style="text-align:left; padding-bottom:6px;">Tostada con aceite y tomate (Entera)</td>
+											<td style="text-align:right; vertical-align:top;">2.5 €</td>
+										</tr>
+										<tr>
+											<td style="text-align:left; padding-bottom:6px;">Tostada jamon (1/2)</td>
+											<td style="text-align:right; vertical-align:top;">2 €</td>
+										</tr>
+										<tr>
+											<td style="text-align:left; padding-bottom:6px;">Tostada con aceite y tomate (Entera)</td>
+											<td style="text-align:right; vertical-align:top;">3.5 €</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#raciones" aria-expanded="false"
+								aria-controls="flush-collapseTwo">Raciones</button>
+						</h2>
+						<div id="raciones" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingTwo"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								Se mostrará las raciones
+								<code>.accordion-flush</code>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#bebidas" aria-expanded="false"
+								aria-controls="flush-collapseThree">Bebidas</button>
+						</h2>
+						<div id="bebidas" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								Se mostrará las Bebidas.
+								<code>.accordion-flush</code>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#cocteles" aria-expanded="false"
+								aria-controls="flush-collapseThree">Cócteles</button>
+						</h2>
+						<div id="cocteles" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								Se mostrará los Cocteles.
+								<code>.accordion-flush</code>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+
+</html>
