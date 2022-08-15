@@ -5242,3 +5242,9 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2022-08-15 21:54:37,811 [http-nio-8080-exec-1] ERROR com.memphis.cafe.controllers.SnsCrucesController             : Leyendo la informacion inicial
 2022-08-15 22:05:51,261 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m20s842ms).
 2022-08-15 22:24:13,135 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m21s877ms).
+2022-08-15 22:40:52,370 [Thread-5] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-15 22:40:52,371 [Thread-5] INFO  o.h.t.s.internal.SchemaDropperImpl$DelayedDropActionImpl     : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-15 22:40:52,588 [Thread-5] WARN  o.s.beans.factory.support.DisposableBeanAdapter              : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-08-15 22:40:52,589 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown initiated...
+2022-08-15 22:40:52,594 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown completed.
