@@ -15,8 +15,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Controller
-@SessionAttributes("crucesUrgentes")
-public class SnsCrucesController {
+@SessionAttributes("memphisCafe")
+public class MemphisController {
 
 	private Logger logAplicacion = LoggerFactory.getLogger(this.getClass());
 
@@ -25,11 +25,8 @@ public class SnsCrucesController {
 
 	@GetMapping({ "/inicio", "/" })
 	public String inicio() {
-		logAplicacion.info("\n");
-		logAplicacion.error("Leyendo la informacion inicial");
-	
+		logAplicacion.info("Mostrando la carta para el Cafe Bar - Memphis");
 		return "inicio";
-
 	}
 
 }

@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.memphis.cafe.models.entity.MemphisCafe;
 
 
-public interface IMemphisCafeDao extends JpaRepository<MemphisCafe, String>{
+public interface IMemphisCafeDao extends JpaRepository<MemphisCafe, Long>{
 
 
 }
