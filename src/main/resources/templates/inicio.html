@@ -196,8 +196,9 @@
 									</div>
 								</div>
 							
-							
-							<div class="accordion accordion-flush" id="accordionRefrescosFlush">
+							<!-- Cervezas -->
+							<!-- ######## -->
+							<div class="accordion accordion-flush" id="accordionCervezasFlush">
 									<div class="accordion-item">
 										<h2 class="accordion-header" id="flush-headingCervezas">
 											<button
@@ -208,7 +209,7 @@
 										</h2>
 										<div id="cervezas" class="accordion-collapse collapse"
 											aria-labelledby="flush-headingCervezas"
-											data-bs-parent="#accordionRefrescosFlush">
+											data-bs-parent="#accordionCervezasFlush">
 											<div class="accordion-body">
 												<table id="tablaComidas">
 													<thead>
@@ -263,24 +264,75 @@
 											</div>
 										</div>
 									</div>
-								</div>	
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								
+								</div>
+
+								<!-- Vinos -->
+								<!-- ##### -->
+								<div class="accordion accordion-flush" id="accordionVinosFlush">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingVinos">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#vinos" aria-expanded="false"
+												aria-controls="flush-collapseVinos">Vinos</button>
+										</h2>
+										<div id="vinos" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingVinos"
+											data-bs-parent="#accordionVinosFlush">
+											<div class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Copa</strong></th>
+															<th id="tablaCabecera"><strong>Botella</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Rioja'" />
+															<td id="preciosBody" th:text="'2,20 €'" />
+															<td id="preciosBody" th:text="'13,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Ribera'" />
+															<td id="preciosBody" th:text="'2,20 €'" />
+															<td id="preciosBody" th:text="'13,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Verdejo'" />
+															<td id="preciosBody" th:text="'2,00 €'" />
+															<td id="preciosBody" th:text="'12,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Frizzante'" />
+															<td id="preciosBody" th:text="'2,00 €'" />
+															<td id="preciosBody" th:text="'12,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Manzanilla'" />
+															<td id="preciosBody" th:text="'2,00 €'" />
+															<td id="preciosBody" th:text="'12,00 €'" />
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+
+
+
+
+
+
 							</div>
 						</div>
 					</div>
