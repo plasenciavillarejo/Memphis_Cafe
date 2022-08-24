@@ -8,7 +8,7 @@
 <body>
 
 	<!-- Py-4 : Nos da un margen de anchura en el "listado de clientes". -->
-	<div class="container py-4">
+	<div id="ivPrincipal" class="container py-4" >
 		<img th:src="@{/images/logoMemphis.png}"
 			class="rounded mx-auto d-block" alt="Logo Memphis"
 			style="max-width: 400px; width: 100%; margin-bottom: 20px;">
@@ -16,31 +16,16 @@
 		<!-- bg-light: Le da un fondo de color a la tabla grisaceo -->
 		<div class="card bg-light">
 			<div class="card-header" style="text-align: center;">
+				<!--  <img th:src="@{/images/granoCafe.png}"
+					 alt="Grano Cafe"
+					style="max-width: 20px; width: 80%;">-->
 				<span id="tituloPanel" style="font-family: Trebuchet MS;">Café
-					& Copas - Memphis</span>
+					&#x26; Copas - Memphis</span>
+				<!--  <img th:src="@{/images/granoCafe.png}"
+					 alt="Grano Cafe"
+					style="max-width: 20px; width: 80%;">-->
 			</div>
 			<div class="card-body col text-center">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 				<!-- Clase Acordeon para los Sub-Menus -->
 				<!-- ################################# -->
@@ -350,7 +335,7 @@
 															<td id="preciosBody" th:text="'3,00 €'" />
 														</tr>
 														<tr>
-															<td id="tituloBody" th:text="'Salitos (Azul y Rojo)'" />
+															<td id="tituloBody" th:text="'Salitos (Azul y Rojo)'"/>
 															<td id="preciosBody" th:text="'3,00 €'" />
 														</tr>
 														<tr>
@@ -588,15 +573,21 @@
 													<tbody>
 														<tr>
 															<td id="tituloBody"
-																th:text="'Pequeña (York, Cuatro Quesos y Peperonni)'" />
+																th:text="'Pequeña'" />
 															<td id="preciosBody" th:text="'5,50 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(York, Cuatro Quesos y Peperonni)'">
+														</tr>
+														<tr>
 															<td id="tituloBody"
-																th:text="'Mediana (Carbonara,
-																	Barbacoa, Vegana,Atún Cebolla Roja, Atún y Bacon, Kebab
-																	Pollo, Pollo a la Barbacoa, 5 Quesos)'" />
+																th:text="'Mediana'" />
 															<td id="preciosBody" th:text="'6,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(Carbonara,
+																	Barbacoa, Vegana,Atún Cebolla Roja, Atún y Bacon, Kebab
+																	Pollo, Pollo a la Barbacoa, 5 Quesos)'">
 														</tr>
 													</tbody>
 												</table>
@@ -632,8 +623,11 @@
 														</tr>
 														<tr>
 															<td id="tituloBody"
-																th:text="'Memphis (Queso, Bacon y Cebolla)'" />
+																th:text="'Memphis'" />
 															<td id="preciosBody" th:text="'3,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(Queso, Bacon y Cebolla)'">
 														</tr>
 													</tbody>
 												</table>
@@ -669,16 +663,21 @@
 														</tr>
 														<tr>
 															<td id="tituloBody"
-																th:text="'Memphis (Carne,
-																	Lechuga, Tomate, Cebolla, Tortilla o Huevo)'" />
+																th:text="'Memphis'" />
 															<td id="preciosBody" th:text="'4,80 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(Carne,
+																	Lechuga, Tomate, Cebolla, Tortilla o Huevo)'">
+														</tr>
+														<tr>
 															<td id="tituloBody"
-																th:text="'Premium
-																	(Ternera,Cebolla caramelizada, Canónicos, Bacon,
-																	Mostaza dulce)'" />
+																th:text="'Premium'" />
 															<td id="preciosBody" th:text="'6,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(Ternera,Cebolla caramelizada, Canónicos, Bacon,
+																	Mostaza dulce)'">
 														</tr>
 													</tbody>
 												</table>
@@ -868,13 +867,19 @@
 														</tr>
 														<tr>
 															<td id="tituloBody"
-																th:text="'Americano (Lechuga, Tomate, Cebolla, York y Tortilla)'" />
+																th:text="'Americano'" />
 															<td id="preciosBody" th:text="'4,80 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(Lechuga, Tomate, Cebolla, York y Tortilla)'">
+														</tr>
+														<tr>
 															<td id="tituloBody"
-																th:text="'Vegetal (Lechuga, Tomate, Caballa o Salmón o Atún)'" />
+																th:text="'Vegetal'" />
 															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(Lechuga, Tomate, Caballa, Salmón o Atún)'">
 														</tr>
 													</tbody>
 												</table>
@@ -1156,8 +1161,11 @@
 															<td id="preciosBody" th:text="'4,50 €'" />
 														</tr>
 														<tr>
-															<td id="tituloBody" th:text="'Espacial (Bombay, Saphire o Master)'" />
+															<td id="tituloBody" th:text="'Especial'" />
 															<td id="preciosBody" th:text="'5,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva" th:text="'(Bombay, Saphire o Master)'">
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Chivas,E. Negra,Barcelo Imperial '" />
@@ -1267,24 +1275,16 @@
 						</div>
 					</div>
 
-
-
-
-
-
 					<!-- Cierre div Iniciales -->
 					<!-- #################### -->
 				</div>
 			</div>
-		</div>
-	</div>
-
-
-
+		
 
 	<!-- FOOTER -->
 	<!-- ###### -->
 	<footer th:replace="layout/layout :: footer"></footer>
+	</div>
 </body>
 
 </html>
