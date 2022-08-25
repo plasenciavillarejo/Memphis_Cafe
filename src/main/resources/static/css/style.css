@@ -61,6 +61,6 @@ table {
 	margin:0 auto;
 }
 
-.tituloImagenes:hover .tooltiptext {
-  visibility: visible;
+#modalBoton{
+	margin-top: 1%;
 }

@@ -622,7 +622,7 @@
 															<td id="preciosBody" th:text="'2,80 €'" />
 														</tr>
 														<tr>
-															<td id="tituloBody"><img id="tituloImagenes"
+															<td id="tituloBody" onmouseenter=""><img
 																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
 																style="max-width: 17px; width: 10%;"
 																data-toggle="tooltip" data-bs-placement="left"
@@ -1767,12 +1767,47 @@
 					<!-- #################### -->
 				</div>
 			</div>
-		
 
-	<!-- FOOTER -->
+		<div class="position-relative">
+
+			
+
+				<!-- Button trigger modal -->
+				<button id="modalBoton" type="button" class="btn btn-outline-success btn-sm"
+				 data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Alérgenos </button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="staticBackdrop"
+					data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+					aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Leyenda de Alérgenos</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">...</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+		</div>
+
+
+
+		<!-- FOOTER -->
 	<!-- ###### -->
 	<footer th:replace="layout/layout :: footer"></footer>
 	</div>
+
+	
 </body>
 
 </html>
