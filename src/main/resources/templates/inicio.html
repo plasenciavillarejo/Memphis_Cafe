@@ -9,7 +9,7 @@
 
 	<!-- Py-4 : Nos da un margen de anchura. -->
 	<div id="ivPrincipal" class="container py-4" >
-		<img th:src="@{/images/logoMemphis.png}"
+		<img th:src="@{/images/logoMemphis.jpg}"
 			class="rounded mx-auto d-block" alt="Logo Memphis"
 			style="max-width: 400px; width: 100%; margin-bottom: 20px;">
 
@@ -622,12 +622,31 @@
 															<td id="preciosBody" th:text="'2,80 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody"
 																th:text="'Memphis'" />
 															<td id="preciosBody" th:text="'3,50 €'" />
 														</tr>
 														<tr>
 															<td id="subtituloBodyCursiva" th:text="'(Queso, Bacon y Cebolla)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> 
+																<img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
 														</tr>
 													</tbody>
 												</table>
@@ -716,12 +735,42 @@
 															<td id="preciosBody" th:text="'3.80 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
 															<td id="subtituloBody"><i>Queso</i></td>
 															<td id="preciosBody" th:text="'3,80 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+
+														<tr>
 															<td id="subtituloBody"><i>Caballa</i></td>
 															<td id="preciosBody" th:text="'3,80 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Bocadillos Calientes'" />
@@ -732,26 +781,77 @@
 															<td id="preciosBody" th:text="'4.00 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
 															<td id="subtituloBody"><i>Lomo y Queso</i></td>
 															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
 														</tr>
 														<tr>
 															<td id="subtituloBody"><i>Lomo y Bacon</i></td>
 															<td id="preciosBody" th:text="'4,50 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
 															<td id="subtituloBody"><i>Bacon</i></td>
 															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
 														</tr>
 														<tr>
 															<td id="subtituloBody"><i>Tortilla Francesa</i></td>
 															<td id="preciosBody" th:text="'4,00 €'" />
 														</tr>
 														<tr>
+															<td id="subtituloBody">
+																<img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos">
+																<img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
+														</tr>
+														<tr>
 															<td id="subtituloBody"><i>Serranito</i></td>
 															<td id="preciosBody" th:text="'5,00 €'" />
 														</tr>
-
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
+														</tr>
 													</tbody>
 												</table>
 											</div>
@@ -785,52 +885,195 @@
 															<td id="preciosBody" th:text="'4.00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Bacon'" />
 															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Jamón'" />
 															<td id="preciosBody" th:text="'4,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Queso'" />
 															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Tortilla'" />
 															<td id="preciosBody" th:text="'4,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody">
+																<img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos">
+																<img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Lomo y Queso'" />
 															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Jamón y Queso'" />
 															<td id="preciosBody" th:text="'4,50 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Bacon y Queso'" />
 															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Salmón y Philadelphia'" />
 															<td id="preciosBody" th:text="'5,50 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> 
+																<img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"> 
+																<img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Anchoa y Philadelphia'" />
 															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> 
+																<img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"> 
+																<img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Anchoa y Tomate'" />
 															<td id="preciosBody" th:text="'5,50 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> 
+																<img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Caballa y Tomate'" />
 															<td id="preciosBody" th:text="'5,50 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> 
+																<img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Serranito'" />
 															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
 														</tr>
 													</tbody>
 												</table>
@@ -866,6 +1109,13 @@
 															<td id="preciosBody" th:text="'3,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
+														</tr>
+														<tr>
 															<td id="tituloBody"
 																th:text="'Americano'" />
 															<td id="preciosBody" th:text="'4,80 €'" />
@@ -874,12 +1124,36 @@
 															<td id="subtituloBodyCursiva" th:text="'(Lechuga, Tomate, Cebolla, York y Tortilla)'">
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> 
+																<img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody"
 																th:text="'Vegetal'" />
 															<td id="preciosBody" th:text="'4,50 €'" />
 														</tr>
 														<tr>
 															<td id="subtituloBodyCursiva" th:text="'(Lechuga, Tomate, Caballa, Salmón o Atún)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> 
+																<img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
 														</tr>
 													</tbody>
 												</table>
@@ -936,12 +1210,45 @@
 															<td id="preciosBody" th:text="'12,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+															<td />
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Queso'" />
 															<td id="preciosBody" th:text="'12,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody">
+																<img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten">
+																<img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 22px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos">
+															</td>
+															<td />
+															
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Paté'" />
 															<td id="preciosBody" th:text="'7,00 €'" />
+														</tr>
+														<tr>
+														<td id="tituloBody">
+																<img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten">
+															</td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Ensalada'" />
@@ -984,8 +1291,19 @@
 															<td id="tituloBody"><img
 																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
 																style="max-width: 17px; width: 10%;"
-																data-toggle="tooltip" data-placement="top"
-																title="Gluten"></td>
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten">
+																<img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 22px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos">
+																<img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos">
+															</td>
 															<td />
 														</tr>
 														<tr>
@@ -993,8 +1311,64 @@
 															<td id="preciosBody" th:text="'13,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten">
+																<img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 22px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos">
+																<img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos">
+															</td>
+															<td />
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Flamenquín'" />
 															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten">
+																<img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 22px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos">
+																<img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos">
+															</td>
+															<td />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Calamares'" />
+															<td id="preciosBody" th:text="'13,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescados"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescados">
+																<img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten">
+															</td>
+															<td />
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Gambones Fritos'" />
@@ -1004,7 +1378,7 @@
 															<td id="tituloBody"><img
 																th:src="@{/images/alergenos/Crustaceos.png}" alt="Crustaceos"
 																style="max-width: 24px; width: 10%;"
-																data-toggle="tooltip" data-placement="top"
+																data-toggle="tooltip" data-placement="left"
 																title="Crustaceos"></td>
 															<td />
 														</tr>
@@ -1013,11 +1387,14 @@
 															<td id="preciosBody" th:text="'14,00 €'" />
 														</tr>
 														<tr>
-															<td id="tituloBody"><img
+														<td id="tituloBody">
+																
+																<img
 																th:src="@{/images/alergenos/Crustaceos.png}" alt="Crustaceos"
 																style="max-width: 24px; width: 10%;"
-																data-toggle="tooltip" data-placement="top"
-																title="Crustaceos"></td>
+																data-toggle="tooltip" data-placement="lef"
+																title="Crustaceos">
+																</td>
 															<td />
 														</tr>
 														<tr>
@@ -1039,19 +1416,6 @@
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 					<!-- Carnes -->
 					<!-- ###### -->
@@ -1080,8 +1444,26 @@
 											<td id="preciosBody" th:text="'13,00 €'" />
 										</tr>
 										<tr>
+											<td id="tituloBody"><img
+												th:src="@{/images/alergenos/Sulfitos.jpg}"
+												alt="Sulfitos" style="max-width: 22px; width: 10%;"
+												data-toggle="tooltip" data-placement="lef"
+												title="Sulfitos">
+												</td>
+											<td />
+										</tr>
+										<tr>
 											<td id="tituloBody" th:text="'Solomillo al Calabres'" />
 											<td id="preciosBody" th:text="'13,00 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody"><img
+												th:src="@{/images/alergenos/Sulfitos.jpg}"
+												alt="Sulfitos" style="max-width: 22px; width: 10%;"
+												data-toggle="tooltip" data-placement="lef"
+												title="Sulfitos">
+												</td>
+											<td />
 										</tr>
 										<tr>
 											<td id="tituloBody"
@@ -1122,18 +1504,99 @@
 											<td id="preciosBody" th:text="'13,00 €'" />
 										</tr>
 										<tr>
+											<td id="tituloBody"><img
+												th:src="@{/images/alergenos/Moluscos.jpg}"
+												alt="Moluscos" style="max-width: 22px; width: 10%;"
+												data-toggle="tooltip" data-placement="lef"
+												title="Moluscos"></td>
+											<td />
+										</tr>
+										<tr>
 											<td id="tituloBody" th:text="'Atún al Estilo Memphis'" />
 											<td id="preciosBody" th:text="'13,00 €'" />
 										</tr>
 										<tr>
+											<td id="tituloBody"><img
+												th:src="@{/images/alergenos/Gluten.jpg}"
+												alt="Gluten" style="max-width: 22px; width: 10%;"
+												data-toggle="tooltip" data-placement="lef"
+												title="Gluten">
+												<img
+												th:src="@{/images/alergenos/Pescados.jpg}"
+												alt="Pescados" style="max-width: 22px; width: 10%;"
+												data-toggle="tooltip" data-placement="lef"
+												title="Pescados">
+												</td>
+											<td />
+										</tr>
+										<tr>
 											<td id="tituloBody" th:text="'Sepía a la plancha'" />
 											<td id="preciosBody" th:text="'13,00 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody">
+												<img
+												th:src="@{/images/alergenos/Pescados.jpg}"
+												alt="Pescados" style="max-width: 22px; width: 10%;"
+												data-toggle="tooltip" data-placement="lef"
+												title="Pescados">
+												</td>
+											<td />
 										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>
+
+					<!-- Postres -->
+					<!-- ####### -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingPostres">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse" data-bs-target="#postres"
+								aria-expanded="false" aria-controls="flush-collapsePostres">Postres</button>
+						</h2>
+						<div id="postres" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingPostres"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+
+								<table id="tablaComidas">
+									<thead>
+										<tr>
+											<th></th>
+											<th id="tablaCabecera"><strong>Precio</strong></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td id="tituloBody" th:text="'Surtido de Tartas'" />
+											<td id="preciosBody" th:text="'9,00 €'" />
+										</tr>
+										<tr>
+											<td id="subtituloBodyCursiva" th:text="'(3 Tartas)'" />
+											<td/>
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Surtido de Tres Tartas + Helado'" />
+											<td id="preciosBody" th:text="'16,00 €'" />
+										</tr>
+										<tr>
+											<td id="subtituloBodyCursiva" th:text="'(3 Tartas + 3 Helados)'" />
+											<td/>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+					</div>
+
+
+
+
 
 					<!-- Cocteles -->
 					<!-- ######## -->
