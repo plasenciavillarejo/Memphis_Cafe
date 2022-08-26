@@ -19,8 +19,7 @@
 				<!--  <img th:src="@{/images/granoCafe.png}"
 					 alt="Grano Cafe"
 					style="max-width: 20px; width: 80%;">-->
-				<span id="tituloPanel" style="font-family: Trebuchet MS;">Café
-					&#x26; Copas - Memphis</span>
+				<span id="tituloPanel" >Café &#x26; Copas - Memphis</span>
 				<!--  <img th:src="@{/images/granoCafe.png}"
 					 alt="Grano Cafe"
 					style="max-width: 20px; width: 80%;">-->
@@ -1745,66 +1744,12 @@
 
 
 		<div class="position-relative">
-
-				<!-- Button trigger modal -->
-			<button id="modalBoton" type="button"
-				class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
-				data-bs-target="#staticBackdrop">Alérgenos</button>
-
-			<!-- Modal -->
-			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-				data-bs-keyboard="false" tabindex="-1"
-				aria-labelledby="staticBackdropLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="staticBackdropLabel">Leyenda de
-								Alérgenos</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="modal"
-								aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<table id="tablaComidas">
-								<thead>
-									<tr>
-										<th></th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-										<img
-												th:src="@{/images/alergenos/Pescados.jpg}"
-												alt="Pescados" style="max-width: 26px; width: 10%;"
-												data-toggle="tooltip" data-placement="left"
-												title="Pescados"> Pescado
-										</td>
-										<td>
-										<img
-												th:src="@{/images/alergenos/Altramuz.jpg}"
-												alt="Altramuz" style="max-width: 26px; width: 10%;"
-												data-toggle="tooltip" data-placement="left"
-												title="Altramuz"> Altramuz
-										</td>
-									</tr>
-									
-								</tbody>
-							</table>
-
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary"
-								data-bs-dismiss="modal">Cerrar</button>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div th:replace="modalAlergenos"></div>
 		</div>
 
+	
 
-
-		<!-- FOOTER -->
+	<!-- FOOTER -->
 	<!-- ###### -->
 	<footer th:replace="layout/layout :: footer"></footer>
 	</div>
