@@ -1606,3 +1606,128 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2022-08-26 20:51:21,678 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
 2022-08-26 20:51:21,681 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 3 ms
 2022-08-26 20:51:21,707 [http-nio-8080-exec-1] INFO  com.memphis.cafe.controllers.MemphisController               : Mostrando la carta para el Cafe Bar - Memphis
+2022-08-26 20:58:04,208 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-26 20:58:04,236 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-26 20:58:04,237 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.t.s.internal.SchemaDropperImpl$DelayedDropActionImpl     : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-26 20:58:04,458 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.beans.factory.support.DisposableBeanAdapter              : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-08-26 20:58:04,461 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown initiated...
+2022-08-26 20:58:04,465 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown completed.
+2022-08-26 20:58:07,004 [background-preinit] INFO  org.hibernate.validator.internal.util.Version                : HV000001: Hibernate Validator 6.2.0.Final
+2022-08-26 20:58:07,024 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : Starting MemphiCafeApplication using Java 18.0.1 on MacBook-Air-de-Jose.local with PID 9920 (/Users/joseplasenciavillarejo/git/Memphis_Cafe/target/classes started by joseplasenciavillarejo in /Users/joseplasenciavillarejo/git/Memphis_Cafe)
+2022-08-26 20:58:07,025 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : No active profile set, falling back to default profiles: default
+2022-08-26 20:58:07,114 [restartedMain] INFO  org.springframework.boot.devtools.restart.ChangeableUrls     : The Class-Path manifest attribute in /Users/joseplasenciavillarejo/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/Users/joseplasenciavillarejo/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2022-08-26 20:58:07,114 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-26 20:58:07,114 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-26 20:58:08,106 [restartedMain] INFO  o.s.data.repository.config.RepositoryConfigurationDelegate   : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-26 20:58:08,173 [restartedMain] INFO  o.s.data.repository.config.RepositoryConfigurationDelegate   : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2022-08-26 20:58:09,098 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2022-08-26 20:58:09,108 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-26 20:58:09,109 [restartedMain] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2022-08-26 20:58:09,109 [restartedMain] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-26 20:58:09,184 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-08-26 20:58:09,184 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2070 ms
+2022-08-26 20:58:09,219 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Starting...
+2022-08-26 20:58:09,420 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Start completed.
+2022-08-26 20:58:09,428 [restartedMain] INFO  o.s.boot.autoconfigure.h2.H2ConsoleAutoConfiguration         : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-26 20:58:09,677 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper                    : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-26 20:58:09,711 [restartedMain] INFO  org.hibernate.Version                                        : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-26 20:58:09,812 [restartedMain] INFO  org.hibernate.annotations.common.Version                     : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-26 20:58:09,902 [restartedMain] INFO  org.hibernate.dialect.Dialect                                : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-26 20:58:10,366 [restartedMain] INFO  o.h.e.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-26 20:58:10,373 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-26 20:58:10,481 [restartedMain] WARN  o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration     : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-26 20:58:11,297 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer     : LiveReload server is running on port 35729
+2022-08-26 20:58:11,346 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-8080"]
+2022-08-26 20:58:11,364 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-26 20:58:11,388 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : Started MemphiCafeApplication in 5.058 seconds (JVM running for 6.289)
+2022-08-26 20:58:19,350 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-26 20:58:19,350 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2022-08-26 20:58:19,353 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 3 ms
+2022-08-26 20:58:19,386 [http-nio-8080-exec-1] INFO  com.memphis.cafe.controllers.MemphisController               : Mostrando la carta para el Cafe Bar - Memphis
+2022-08-26 20:58:43,360 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-26 20:58:43,387 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-26 20:58:43,388 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.t.s.internal.SchemaDropperImpl$DelayedDropActionImpl     : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-26 20:58:43,610 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.beans.factory.support.DisposableBeanAdapter              : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-08-26 20:58:43,613 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown initiated...
+2022-08-26 20:58:43,616 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown completed.
+2022-08-26 20:58:46,142 [background-preinit] INFO  org.hibernate.validator.internal.util.Version                : HV000001: Hibernate Validator 6.2.0.Final
+2022-08-26 20:58:46,160 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : Starting MemphiCafeApplication using Java 18.0.1 on MacBook-Air-de-Jose.local with PID 9921 (/Users/joseplasenciavillarejo/git/Memphis_Cafe/target/classes started by joseplasenciavillarejo in /Users/joseplasenciavillarejo/git/Memphis_Cafe)
+2022-08-26 20:58:46,162 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : No active profile set, falling back to default profiles: default
+2022-08-26 20:58:46,251 [restartedMain] INFO  org.springframework.boot.devtools.restart.ChangeableUrls     : The Class-Path manifest attribute in /Users/joseplasenciavillarejo/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/Users/joseplasenciavillarejo/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2022-08-26 20:58:46,251 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-26 20:58:46,252 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-26 20:58:47,220 [restartedMain] INFO  o.s.data.repository.config.RepositoryConfigurationDelegate   : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-26 20:58:47,285 [restartedMain] INFO  o.s.data.repository.config.RepositoryConfigurationDelegate   : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2022-08-26 20:58:48,218 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2022-08-26 20:58:48,228 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-26 20:58:48,229 [restartedMain] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2022-08-26 20:58:48,229 [restartedMain] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-26 20:58:48,301 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-08-26 20:58:48,301 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2049 ms
+2022-08-26 20:58:48,336 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Starting...
+2022-08-26 20:58:48,536 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Start completed.
+2022-08-26 20:58:48,544 [restartedMain] INFO  o.s.boot.autoconfigure.h2.H2ConsoleAutoConfiguration         : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-26 20:58:48,789 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper                    : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-26 20:58:48,823 [restartedMain] INFO  org.hibernate.Version                                        : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-26 20:58:48,925 [restartedMain] INFO  org.hibernate.annotations.common.Version                     : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-26 20:58:49,011 [restartedMain] INFO  org.hibernate.dialect.Dialect                                : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-26 20:58:49,480 [restartedMain] INFO  o.h.e.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-26 20:58:49,487 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-26 20:58:49,601 [restartedMain] WARN  o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration     : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-26 20:58:50,411 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer     : LiveReload server is running on port 35729
+2022-08-26 20:58:50,459 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-8080"]
+2022-08-26 20:58:50,477 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-26 20:58:50,495 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : Started MemphiCafeApplication in 5.026 seconds (JVM running for 6.226)
+2022-08-26 20:58:54,553 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-26 20:58:54,553 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2022-08-26 20:58:54,555 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 2 ms
+2022-08-26 20:58:54,580 [http-nio-8080-exec-1] INFO  com.memphis.cafe.controllers.MemphisController               : Mostrando la carta para el Cafe Bar - Memphis
+2022-08-26 21:01:31,750 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-26 21:01:31,779 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-26 21:01:31,780 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.t.s.internal.SchemaDropperImpl$DelayedDropActionImpl     : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-26 21:01:32,003 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.beans.factory.support.DisposableBeanAdapter              : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-08-26 21:01:32,006 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown initiated...
+2022-08-26 21:01:32,010 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown completed.
+2022-08-26 22:06:50,105 [background-preinit] INFO  org.hibernate.validator.internal.util.Version                : HV000001: Hibernate Validator 6.2.0.Final
+2022-08-26 22:06:50,126 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : Starting MemphiCafeApplication using Java 18.0.1 on MacBook-Air-de-Jose.local with PID 10023 (/Users/joseplasenciavillarejo/git/Memphis_Cafe/target/classes started by joseplasenciavillarejo in /Users/joseplasenciavillarejo/git/Memphis_Cafe)
+2022-08-26 22:06:50,127 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : No active profile set, falling back to default profiles: default
+2022-08-26 22:06:50,220 [restartedMain] INFO  org.springframework.boot.devtools.restart.ChangeableUrls     : The Class-Path manifest attribute in /Users/joseplasenciavillarejo/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/Users/joseplasenciavillarejo/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/oraclepki.jar
+2022-08-26 22:06:50,220 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-26 22:06:50,221 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-26 22:06:51,229 [restartedMain] INFO  o.s.data.repository.config.RepositoryConfigurationDelegate   : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-26 22:06:51,297 [restartedMain] INFO  o.s.data.repository.config.RepositoryConfigurationDelegate   : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2022-08-26 22:06:52,276 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2022-08-26 22:06:52,286 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-26 22:06:52,287 [restartedMain] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2022-08-26 22:06:52,287 [restartedMain] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-26 22:06:52,359 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-08-26 22:06:52,359 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2138 ms
+2022-08-26 22:06:52,395 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Starting...
+2022-08-26 22:06:52,602 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Start completed.
+2022-08-26 22:06:52,610 [restartedMain] INFO  o.s.boot.autoconfigure.h2.H2ConsoleAutoConfiguration         : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-26 22:06:52,863 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper                    : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-26 22:06:52,898 [restartedMain] INFO  org.hibernate.Version                                        : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-26 22:06:53,002 [restartedMain] INFO  org.hibernate.annotations.common.Version                     : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-26 22:06:53,093 [restartedMain] INFO  org.hibernate.dialect.Dialect                                : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-26 22:06:53,566 [restartedMain] INFO  o.h.e.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-26 22:06:53,573 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-26 22:06:53,685 [restartedMain] WARN  o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration     : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-26 22:06:54,512 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer     : LiveReload server is running on port 35729
+2022-08-26 22:06:54,557 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-8080"]
+2022-08-26 22:06:54,577 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-26 22:06:54,596 [restartedMain] INFO  com.memphis.cafe.MemphiCafeApplication                       : Started MemphiCafeApplication in 5.149 seconds (JVM running for 6.398)
+2022-08-26 22:07:09,076 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-26 22:07:09,077 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2022-08-26 22:07:09,078 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 1 ms
+2022-08-26 22:07:09,103 [http-nio-8080-exec-1] INFO  com.memphis.cafe.controllers.MemphisController               : Mostrando la carta para el Cafe Bar - Memphis
+2022-08-26 22:26:57,376 [http-nio-8080-exec-4] INFO  com.memphis.cafe.controllers.MemphisController               : Mostrando la carta para el Cafe Bar - Memphis
+2022-08-26 22:27:19,439 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-26 22:27:19,477 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-26 22:27:19,477 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.t.s.internal.SchemaDropperImpl$DelayedDropActionImpl     : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-26 22:27:19,699 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.beans.factory.support.DisposableBeanAdapter              : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-08-26 22:27:19,700 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown initiated...
+2022-08-26 22:27:19,704 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown completed.
