@@ -1707,8 +1707,17 @@
 			<div th:replace="modalAlergenos"></div>
 		</div>
  		-->
- 		<div th:replace="modalAlergenos"></div>
- 		
+
+		<!-- 		<div style=" background-color: rgba(0, 0, 0, 0.05);"> -->
+		<div>
+			<button id="modalBoton" type="button" class="btn btn-sm"
+				data-bs-toggle="modal" data-bs-target="#staticBackdrop">Alérgenos</button>
+		</div>
+		<div id="staticBackdrop" th:replace="modalAlergenos"></div>
+		<!-- 		</div> -->
+
+
+
 		<!-- FOOTER -->
 		<!-- ###### -->
 		<footer th:replace="layout/layout :: footer"> </footer>
