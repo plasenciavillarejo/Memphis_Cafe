@@ -64,7 +64,9 @@ table {
 
 #modalBoton{
 	margin-top: 2%;
-	
+	background-color: #43b39b;
+	border-color: #43b39b;
+	color:white;
 }
 
 /*  Hacerlo fijo el pie de página 
