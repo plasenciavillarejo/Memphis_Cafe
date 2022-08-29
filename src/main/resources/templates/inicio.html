@@ -2,7 +2,10 @@
 <!-- A�adimos el nameSpace de seguridad de Thymeleaf -->
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/layout :: head"></head>
+<head th:replace="layout/layout :: head">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
 
 <!-- background-image:url('/images/logoMemphis.png'); opacity:1; -->
 <body>
@@ -825,13 +828,12 @@
 															<td id="preciosBody" th:text="'3,80 €'" />
 														</tr>
 														<tr>
-															<td id="tituloBody" th:text="'Memphis'" />
-															<td id="preciosBody" th:text="'4,80 €'" />
+															<td id="tituloBody" th:text="'Memphis'" />		
 														</tr>
 														<tr>
-															<td id="subtituloBodyCursiva"
-																th:text="'(Carne,
-																	Lechuga, Tomate, Cebolla, Tortilla o Huevo)'">
+															<td class="btn btn-secondary popover-test" title="Ingredientes" 
+															data-bs-content="Carne,Lechuga, Tomate, Cebolla, Tortilla o Huevo."
+																th:text="'Más Información'">
 														</tr>
 														<tr>
 															<td id="tituloBody"><img
@@ -1962,6 +1964,10 @@
 		</div>
 		<div id="staticBackdrop" th:replace="modalAlergenos"></div>
 		<!-- 		</div> -->
+
+
+
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
 
 		<!-- FOOTER -->
