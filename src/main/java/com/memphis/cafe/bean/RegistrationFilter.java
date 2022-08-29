@@ -10,8 +10,8 @@ import com.memphis.filter.AdminFilter;
 public class RegistrationFilter {
 
 	@Bean
-    public FilterRegistrationBean adminFilter() {
-        FilterRegistrationBean registration = new FilterRegistrationBean();
+    public FilterRegistrationBean<AdminFilter> adminFilter() {
+        FilterRegistrationBean<AdminFilter> registration = new FilterRegistrationBean<AdminFilter>();
         registration.setFilter(new AdminFilter());
 
         // In case you want the filter to apply to specific URL patterns only

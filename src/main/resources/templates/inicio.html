@@ -2,7 +2,15 @@
 <!-- A�adimos el nameSpace de seguridad de Thymeleaf -->
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layout/layout :: head"></head>
+<head th:replace="layout/layout :: head">
+
+ <script>
+      $(document).ready(function()
+      {
+         $("#mostrarmodal").modal("show");
+      });
+    </script>
+</head>
 
 <!-- background-image:url('/images/logoMemphis.png'); opacity:1; -->
 <body>
@@ -36,7 +44,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="flush-headingCafes">
 							<button
-								class="accordion-button collapsed btn btn-sm"
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
 								type="button" data-bs-toggle="collapse" data-bs-target="#cafes"
 								aria-expanded="false" aria-controls="flush-collapseCafes">Cafés
 								/ Infusiones</button>
@@ -590,20 +598,59 @@
 															<td id="preciosBody" th:text="'9,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> </td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Jamón'" />
 															<td id="preciosBody" th:text="'9,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Queso'" />
 															<td id="preciosBody" th:text="'9,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Lomo/Bacon/Queso'" />
 															<td id="preciosBody" th:text="'10,00 €'" />
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Serranito'" />
 															<td id="preciosBody" th:text="'11,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody"
@@ -795,6 +842,17 @@
 																	Lechuga, Tomate, Cebolla, Tortilla o Huevo)'">
 														</tr>
 														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos"></td>
+														</tr>
+														<tr>
 															<td id="tituloBody" th:text="'Premium'" />
 															<td id="preciosBody" th:text="'6,00 €'" />
 														</tr>
@@ -802,6 +860,22 @@
 															<td id="subtituloBodyCursiva"
 																th:text="'(Ternera,Cebolla caramelizada, Canónicos, Bacon,
 																	Mostaza dulce)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos">
+																 <img
+																th:src="@{/images/alergenos/Sulfitos.jpg}" alt="Sulfitos"
+																style="max-width: 20px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Sulfitos"></td>
 														</tr>
 													</tbody>
 												</table>
@@ -876,6 +950,10 @@
 																style="max-width: 17px; width: 10%;"
 																data-toggle="tooltip" data-bs-placement="left"
 																title="Pescado"></td>
+														</tr>
+														<tr>
+															<td><br></td>
+															<td></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Bocadillos Calientes'" />
@@ -1844,27 +1922,27 @@
 											<td id="preciosBody" th:text="'6,00 €'" />
 										</tr>
 										<tr>
-										<td><br></td>
-										<td></td>
+											<td><br></td>
+											<td></td>
 										</tr>
 										<tr>
 											<td id="tituloBody" th:text="'Bollería Industrial'" />
 											<td />
 										</tr>
 										<tr>
-											<td id="subtituloBodyCursiva" th:text="'Gofre'" />
+											<td id="subtituloBody" th:text="'Gofre'" />
 											<td id="preciosBody" th:text="'1,30 €'" />
 										</tr>
 										<tr>
-											<td id="subtituloBodyCursiva" th:text="'Bollicao'" />
+											<td id="subtituloBody" th:text="'Bollicao'" />
 											<td id="preciosBody" th:text="'1,50 €'" />
 										</tr>
 										<tr>
-											<td id="subtituloBodyCursiva" th:text="'Donuts'" />
+											<td id="subtituloBody" th:text="'Donuts'" />
 											<td id="preciosBody" th:text="'1,00 €'" />
 										</tr>
 										<tr>
-											<td id="subtituloBodyCursiva" th:text="'Donetes'" />
+											<td id="subtituloBody" th:text="'Donetes'" />
 											<td id="preciosBody" th:text="'1,50 €'" />
 										</tr>
 									</tbody>
@@ -1893,6 +1971,27 @@
 		<div id="staticBackdrop" th:replace="modalAlergenos"></div>
 		<!-- 		</div> -->
 
+
+
+		<div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog"
+			aria-labelledby="basicModal" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+						<h3>Cabecera de la ventana</h3>
+					</div>
+					<div class="modal-body">
+						<h4>Texto de la ventana</h4>
+						Mas texto en la ventana.
+					</div>
+					<div class="modal-footer">
+						<a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 		<!-- FOOTER -->
