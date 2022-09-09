@@ -53,13 +53,14 @@
 			<optional>true</optional>
 		</dependency>
 
-
+	<!--
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
+	
+		 -->
 		<!-- Sin está dependencia no puede leer la BD del application.properties. -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
