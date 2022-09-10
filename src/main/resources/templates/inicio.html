@@ -424,7 +424,7 @@
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'La Casera'" />
-															<td/>
+															<td />
 														</tr>
 														<tr>
 															<td id="subtituloBodyCursiva" th:text="'Tinto con Limón'" />
@@ -448,7 +448,8 @@
 												class="accordion-button collapsed btn btn-outline-success btn-sm"
 												type="button" data-bs-toggle="collapse"
 												data-bs-target="#cervezasBarril" aria-expanded="false"
-												aria-controls="flush-collapseCervezasBarril">Cervezas Barril</button>
+												aria-controls="flush-collapseCervezasBarril">Cervezas
+												Barril</button>
 										</h2>
 										<div id="cervezasBarril" class="accordion-collapse collapse"
 											aria-labelledby="flush-headingCervezas"
@@ -464,7 +465,7 @@
 													<tbody>
 														<tr>
 															<td id="tituloBody" th:text="'Heineken'" />
-															<td/>
+															<td />
 														</tr>
 														<tr>
 															<td id="subtituloBodyCursiva" th:text="'Jarrita'" />
@@ -597,7 +598,7 @@
 																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
 																style="max-width: 17px; width: 10%;"
 																data-toggle="tooltip" data-bs-placement="left"
-																title="Gluten"> </td>
+																title="Gluten"></td>
 														</tr>
 														<tr>
 															<td id="tituloBody" th:text="'Jamón'" />
@@ -828,11 +829,12 @@
 															<td id="preciosBody" th:text="'3,80 €'" />
 														</tr>
 														<tr>
-															<td id="tituloBody" th:text="'Memphis'" />		
+															<td id="tituloBody" th:text="'Memphis'" />
 														</tr>
 														<tr>
-															<td class="btn btn-secondary popover-test" title="Ingredientes" 
-															data-bs-content="Carne,Lechuga, Tomate, Cebolla, Tortilla o Huevo."
+															<td class="btn btn-secondary popover-test"
+																title="Ingredientes"
+																data-bs-content="Carne,Lechuga, Tomate, Cebolla, Tortilla o Huevo."
 																th:text="'Más Información'">
 														</tr>
 														<tr>
@@ -864,10 +866,9 @@
 																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
 																style="max-width: 21px; width: 10%;"
 																data-toggle="tooltip" data-bs-placement="left"
-																title="Lacteos">
-																 <img
-																th:src="@{/images/alergenos/Sulfitos.jpg}" alt="Sulfitos"
-																style="max-width: 20px; width: 10%;"
+																title="Lacteos"> <img
+																th:src="@{/images/alergenos/Sulfitos.jpg}"
+																alt="Sulfitos" style="max-width: 20px; width: 10%;"
 																data-toggle="tooltip" data-bs-placement="left"
 																title="Sulfitos"></td>
 														</tr>
@@ -1444,7 +1445,18 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td id="tituloBody" th:text="'Croquetas Gourmet'" />
+															<td id="tituloBody"> Croquetas Gourmet
+																
+																<span id="popov" data-bs-toggle="popover" 
+																data-placemente="right"	data-bs-content="Cochinillo y Manzana. 
+																	Calabaza y Parmesano. 
+																	Rabo de Toro. 
+																	Boletus. 
+																	Jamón Ibérico."
+																	style="text-align:left; padding-bottom:6px; font-family: Verdana; 
+																	font-size: 12px; padding-left: 19px; font-style: italic;"
+																	>(Pulsar para más información)</span></td>
+																
 															<td id="preciosBody" th:text="'15,00 €'" />
 														</tr>
 														<tr>
@@ -1657,7 +1669,8 @@
 											<td />
 										</tr>
 										<tr>
-											<td id="tituloBody" th:text="'Atún con costra de frutos secos'" />
+											<td id="tituloBody"
+												th:text="'Atún con costra de frutos secos'" />
 											<td id="preciosBody" th:text="'13,00 €'" />
 										</tr>
 										<tr>
@@ -1870,18 +1883,18 @@
 												</table>
 											</div>
 										</div>
-									</div>	
+									</div>
 								</div>
 							</div>
 
-				
+
 
 
 						</div>
 					</div>
-					
-					
-						<!-- Repostería -->
+
+
+					<!-- Repostería -->
 					<!-- ########## -->
 					<div class="accordion-item ">
 						<h2 class="accordion-header" id="flush-headingOne">
@@ -1944,14 +1957,14 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 				<!-- Cierre div Iniciales -->
 				<!-- #################### -->
 			</div>
 		</div>
 
- 		<!-- 
+		<!-- 
 		<div style="position: fixed; right: 15%; bottom: 18%;">
 			<div th:replace="modalAlergenos"></div>
 		</div>
@@ -1965,12 +1978,10 @@
 		<div id="staticBackdrop" th:replace="modalAlergenos"></div>
 		<!-- 		</div> -->
 
-
 		<!-- FOOTER -->
 		<!-- ###### -->
 		<footer th:replace="layout/layout :: footer"> </footer>
 	</div>
-
 
 </body>
 

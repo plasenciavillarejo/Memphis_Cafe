@@ -6,15 +6,13 @@
 <head th:fragment="head">
 <meta charset="UTF-8" />
 <title th:text="'Café & Copas - Memphis'"></title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-	crossorigin="anonymous" />
+
 
 <link rel="stylesheet" th:href="@{/css/jquery-ui.min.css}">
 <link rel="stylesheet" th:href="@{/css/jquery.tipsy.css}">
 <link rel="stylesheet" th:href="@{/css/jquery-ui.min.css}">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" >
+<link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" >
 
 <!-- ### Fichero Css Externo ### -->
 <link rel="stylesheet" th:href="@{/css/style.css}">
@@ -133,14 +131,29 @@
 			<b> Telfn: <a href="tel:+34650080057" style="color:#43b39b;">650080057</a></b>
 		</div>
 
+		
+
 		<script th:src="@{/js/jquery-3.4.1.min.js}"></script>
 		<script th:src="@{/js/popper.min.js}"></script>
 		<script th:src="@{/js/bootstrap.min.js}"></script>
 
-		<!-- Liberer�a de Jquery.js -->
+		<!-- Liberería de Jquery.js -->
 		<script th:src="@{/js/jquery-ui.min.js}"></script>
 		<script th:src="@{/js/jquery.tipsy.js}"></script>
 		<script th:src="@{/js/jquery.tipsy.min.js}"></script>
+
+<!-- 	<script th:src="@{/js/bootstrap.bundle.min.js}"></script> -->
+		
+		<!-- Script encargado de abrir los PopOver -->
+		<!-- ##################################### -->
+		<script type="text/javascript">
+		
+			$(function(){
+				$('[data-bs-toggle="popover"]').popover();
+			});
+			
+		</script>
+		
 	</footer>
 
 </body>
