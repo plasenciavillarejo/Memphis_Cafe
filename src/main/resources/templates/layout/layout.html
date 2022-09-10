@@ -140,23 +140,35 @@
 
 		<script th:src="@{/js/jquery-3.4.1.min.js}"></script>
 		<script th:src="@{/js/popper.min.js}"></script>
-<!-- 		<script th:src="@{/js/bootstrap.min.js}"></script> -->
-
+		<!-- Comenta está versión ya que en los navegaodres de IOS no funciona el PopOver al desplegarlo. Lo cambio por bootstrap.bundle.min.js
+		<script th:src="@{/js/bootstrap.min.js}"></script>  -->
+		
+		
+		<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+		
 		<!-- Liberería de Jquery.js -->
 		<script th:src="@{/js/jquery-ui.min.js}"></script>
 		<script th:src="@{/js/jquery.tipsy.js}"></script>
 		<script th:src="@{/js/jquery.tipsy.min.js}"></script>
 
-		<script th:src="@{/js/bootstrap.bundle.min.js}"></script> 
+		 
 		
 		<!-- Script encargado de abrir los PopOver -->
 		<!-- ##################################### -->
 		<script type="text/javascript">
 		
-			$(function(){
+		// Abre el popover al pulsar sobre el.
+
+			$(function() {
 				$('[data-bs-toggle="popover"]').popover();
 			});
-			
+
+		// Se encarga de cerrar el popover si se pulsa fuera de el.
+			$('html').on('click', function(e) {
+				if (typeof $(e.target).data('data-bs-content') == 'undefined') {
+					$('[data-bs-content]').popover('hide');
+				}
+			});
 		</script>
 		
 	</footer>
