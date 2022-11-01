@@ -1,0 +1,15 @@
+2022-10-26 01:06:41,163 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20m37s778ms).
+2022-10-26 02:27:56,798 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m15s634ms).
+2022-10-26 03:50:13,583 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m16s785ms).
+2022-10-26 05:11:25,478 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m11s896ms).
+2022-10-26 06:34:28,528 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23m3s50ms).
+2022-10-26 07:46:11,066 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11m42s538ms).
+2022-10-26 07:53:55,277 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                            : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m44s211ms).
+2022-10-26 07:55:01,601 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-26 07:55:01,619 [RMI TCP Connection(18)-127.0.0.1] INFO  com.memphis.filter.AdminFilter                               :  ### Destruyendo Filtro ###
+2022-10-26 07:55:01,633 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean           : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-26 07:55:01,634 [RMI TCP Connection(18)-127.0.0.1] INFO  o.h.t.s.internal.SchemaDropperImpl$DelayedDropActionImpl     : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-26 07:55:01,854 [RMI TCP Connection(18)-127.0.0.1] WARN  o.s.beans.factory.support.DisposableBeanAdapter              : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-10-26 07:55:01,856 [RMI TCP Connection(18)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown initiated...
+2022-10-26 07:55:01,861 [RMI TCP Connection(18)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                           : HikariPool-1 - Shutdown completed.
