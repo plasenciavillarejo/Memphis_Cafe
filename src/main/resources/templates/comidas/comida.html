@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#comidas" aria-expanded="false"
+								aria-controls="flush-collapseTwo">Comidas</button>
+						</h2>
+
+						<div id="comidas" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingTwo"
+							data-bs-parent="#accordionFlushExample">
+							<div id="colorNavidadFondo" class="accordion-body">
+
+								<!-- Segundo Acordeon enlazado dentro de comidas -->
+								<!-- ########################################### -->
+								<!-- El id accordionSeccondaryFlush sirve para que el acordeon al pulsarlo se cierre el anterior que dependa
+								de está clase. De modo que solo tendremos un acordeon abierto a la misma vez. -->
+
+								<div class="accordion accordion-flush"
+									id="accordionSeccondaryFlush">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingRoscas">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#roscas" aria-expanded="false"
+												aria-controls="flush-collapseRoscas">Roscas</button>
+										</h2>
+										<div id="roscas" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingRoscas"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Lomo'"><i>Lomo</i></td>
+															<td id="preciosBody" th:text="'9,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Jamón'" />
+															<td id="preciosBody" th:text="'9,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Queso'" />
+															<td id="preciosBody" th:text="'9,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Lomo/Bacon/Queso'" />
+															<td id="preciosBody" th:text="'10,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Serranito'" />
+															<td id="preciosBody" th:text="'11,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody"
+																th:text="'Rosca Personalizada (3 ingredientes)'" />
+															<td id="preciosBody" th:text="'11,00 €'" />
+														</tr>
+														<tr>
+															<td id="ingredientesExtras" colspan="2"><i>Ingrediente
+																	Extra 0,50 €</i></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+
+									<!-- Ensaladas -->
+									<!-- ######### -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingEnsaladas">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#ensaladas" aria-expanded="false"
+												aria-controls="flush-collapseEnsaladas">Ensaladas</button>
+										</h2>
+										<div id="ensaladas" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingEnsaladas"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody"
+																th:text="'Lechuga, Tomate, Cebolla y Aceitunas'" />
+															<td id="preciosBody" th:text="'9,00 €'" />
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+
+									<!-- Acordeon Pizzas -->
+									<!-- ############### -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingPizzas">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#pizzas" aria-expanded="false"
+												aria-controls="flush-collapsePizzas">Pizzas</button>
+										</h2>
+										<div id="pizzas" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingPizzas"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Pequeña'" />
+															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(York, Cuatro Quesos y Peperonni)'">
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Mediana'" />
+															<td id="preciosBody" th:text="'6,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(Carbonara,
+																	Barbacoa, Vegana,Atún Cebolla Roja, Atún y Bacon, Kebab
+																	Pollo, Pollo a la Barbacoa, 5 Quesos)'">
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Acordeon Perritos -->
+									<!-- ############### -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingPerritos">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#perritos" aria-expanded="false"
+												aria-controls="flush-collapsePerritos">Perritos</button>
+										</h2>
+										<div id="perritos" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingPerritos"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Normal'" />
+															<td id="preciosBody" th:text="'2,80 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten" data-original-title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Memphis'" />
+															<td id="preciosBody" th:text="'3,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(Queso, Bacon y Cebolla)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Acordeon Hamburguesas -->
+									<!-- ##################### -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingHamburguesas">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#hamburguesas" aria-expanded="false"
+												aria-controls="flush-collapseHamburguesas">Hamburguesas</button>
+										</h2>
+										<div id="hamburguesas" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingHamburguesas"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Normal'" />
+															<td id="preciosBody" th:text="'3,80 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Memphis'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(Lechuga, Tomate, Cebolla, Tortilla o Huevo)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Premium'" />
+															<td id="preciosBody" th:text="'6,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(Ternera,Cebolla caramelizada, Canónicos, Bacon,
+																	Mostaza dulce)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"> <img
+																th:src="@{/images/alergenos/Sulfitos.jpg}"
+																alt="Sulfitos" style="max-width: 20px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Sulfitos"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Bocadillos -->
+									<!-- ################ -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingBocadillos">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#bocadillos" aria-expanded="false"
+												aria-controls="flush-collapseBocadillos">Bocadillos</button>
+										</h2>
+										<div id="bocadillos" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingBocadillos"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Bocadillos Frios'" />
+															<td />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Jamón</i></td>
+															<td id="preciosBody" th:text="'3.80 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Queso</i></td>
+															<td id="preciosBody" th:text="'3,80 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+
+														<tr>
+															<td id="subtituloBody"><i>Caballa</i></td>
+															<td id="preciosBody" th:text="'3,80 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
+														</tr>
+														<tr>
+															<td><br></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Bocadillos Calientes'" />
+															<td />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Lomo</i></td>
+															<td id="preciosBody" th:text="'4.00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Lomo y Queso</i></td>
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Lomo y Bacon</i></td>
+															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Bacon</i></td>
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Tortilla Francesa</i></td>
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos"> <img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="subtituloBody"><i>Serranito</i></td>
+															<td id="preciosBody" th:text="'5,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Alpargata -->
+									<!-- ######### -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingAlpargata">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#alpargata" aria-expanded="false"
+												aria-controls="flush-collapseAlpargata">Alpargatas</button>
+										</h2>
+										<div id="alpargata" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingAlpargata"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Lomo'" />
+															<td id="preciosBody" th:text="'4.00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Bacon'" />
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Jamón'" />
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Queso'" />
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Tortilla'" />
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos"> <img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Lomo y Queso'" />
+															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Jamón y Queso'" />
+															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Bacon y Queso'" />
+															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Salmón y Philadelphia'" />
+															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Anchoa y Philadelphia'" />
+															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"> <img
+																th:src="@{/images/alergenos/Lacteos.jpg}" alt="Lacteos"
+																style="max-width: 21px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Lacteos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Anchoa y Tomate'" />
+															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Caballa y Tomate'" />
+															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Serranito'" />
+															<td id="preciosBody" th:text="'5,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+
+									<!-- Sandwich -->
+									<!-- ######## -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingSandwich">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#sandwich" aria-expanded="false"
+												aria-controls="flush-collapseSandwich">Sandwich</button>
+										</h2>
+										<div id="sandwich" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingSandwich"
+											data-bs-parent="#accordionSeccondaryFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Mixto'" />
+															<td id="preciosBody" th:text="'3,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Americano'" />
+															<td id="preciosBody" th:text="'4,80 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(Lechuga, Tomate, Cebolla, York y Tortilla)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Huevos.jpg}" alt="Huevos"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Huevos"></td>
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Vegetal'" />
+															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(Lechuga, Tomate, Caballa, Salmón o Atún)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"><img
+																th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Gluten"> <img
+																th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescado"
+																style="max-width: 17px; width: 10%;"
+																data-toggle="tooltip" data-bs-placement="left"
+																title="Pescado"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+</body>
+</html>

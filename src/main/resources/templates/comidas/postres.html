@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="flush-headingPostres">
+			<button
+				class="accordion-button collapsed btn btn-outline-success btn-sm"
+				type="button" data-bs-toggle="collapse" data-bs-target="#postres"
+				aria-expanded="false" aria-controls="flush-collapsePostres">Postres</button>
+		</h2>
+		<div id="postres" class="accordion-collapse collapse"
+			aria-labelledby="flush-headingPostres"
+			data-bs-parent="#accordionFlushExample">
+			<div id="colorNavidadFondo" class="accordion-body">
+
+				<a th:href="@{/images/Carta_Postres.pdf}">Carta de Postres</a>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

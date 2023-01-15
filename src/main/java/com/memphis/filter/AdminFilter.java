@@ -1,6 +1,7 @@
 package com.memphis.filter;
 
 import java.io.IOException;
+import java.security.SecureRandom;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -13,18 +14,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
+import javax.xml.bind.DatatypeConverter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 @WebFilter(urlPatterns = { "/inicio", "/" })
+@Component
 public class AdminFilter implements Filter{
 
 	private Logger logFiltro = LoggerFactory.getLogger(this.getClass());
 	
 	 @Override
 	   public void init(FilterConfig filterconfig) throws ServletException {
-		 logFiltro.info(" ### Iniciando Filtro ###");
+		 logFiltro.info(" ### Iniciando Filtro ###");	
 	 }
 	
 	 @Override
@@ -40,6 +44,7 @@ public class AdminFilter implements Filter{
 		
 	}
 
+	
 
 	private void aplicarFiltrosCabecers(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		HttpServletRequestWrapper httpReqWrapper = new HttpServletRequestWrapper((HttpServletRequest) request);
@@ -65,6 +70,13 @@ public class AdminFilter implements Filter{
 		chain.doFilter(httpReqWrapper, httpRespWrapper);
 	}
 
+	
+	private String generarToken() {
+		byte[] buffer = new byte[50];
+		SecureRandom secureRandom = new SecureRandom();
+		secureRandom.nextBytes(buffer);
+		return DatatypeConverter.printHexBinary(buffer);
+	}
 	
 	
 }

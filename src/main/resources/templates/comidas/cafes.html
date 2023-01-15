@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Cafés e Infusiones</title>
+</head>
+<body>
+	<div id="cafeColor" class="accordion-item">
+		<h2 class="accordion-header" id="flush-headingCafes">
+			<button
+				class="accordion-button collapsed btn btn-outline-success btn-sm"
+				type="button" data-bs-toggle="collapse" data-bs-target="#cafes"
+				aria-expanded="false" aria-controls="flush-collapseCafes">Cafés
+				/ Infusiones</button>
+		</h2>
+		<div id="cafes" class="accordion-collapse collapse"
+			aria-labelledby="flush-headingCafes"
+			data-bs-parent="#accordionFlushExample">
+			<div id="colorNavidadFondo" class="accordion-body">
+				<table id="tablaComidas">
+					<thead>
+						<tr>
+							<th></th>
+							<th id="tablaCabecera"><strong>Precio</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="tituloBody" th:text="'Solo / Cortado'" />
+							<td id="preciosBody" th:text="'1,30 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Con leche'" />
+							<td id="preciosBody" th:text="'1,40 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Bombón'" />
+							<td id="preciosBody" th:text="'1,40 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Carajillo normal'" />
+							<td id="preciosBody" th:text="'1,80 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Carajillo importación'" />
+							<td id="preciosBody" th:text="'1,80 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Irlandés'" />
+							<td id="preciosBody" th:text="'4,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Infusiones'" />
+							<td id="preciosBody" th:text="'1,40 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Te'" />
+							<td id="preciosBody" th:text="'1,50 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Capuchino'" />
+							<td id="preciosBody" th:text="'2,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Chocolate'" />
+							<td id="preciosBody" th:text="'1,90 €'" />
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

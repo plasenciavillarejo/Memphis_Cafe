@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingCombinados">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#combinados" aria-expanded="false"
+								aria-controls="flush-collapseCombinados">Combinados</button>
+						</h2>
+
+						<div id="combinados" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingCombinados"
+							data-bs-parent="#accordionFlushExample">
+							<div id="colorNavidadFondo" class="accordion-body">
+
+								<!-- Segundo Acordeon enlazado dentro de Cocteles -->
+								<!-- ########################################### -->
+								<div class="accordion accordion-flush"
+									id="accordionCoctelesFlush">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingCocteles">
+											<button
+												class="accordion-button collapsed btn btn-outline-success btn-sm"
+												type="button" data-bs-toggle="collapse"
+												data-bs-target="#cocteles" aria-expanded="false"
+												aria-controls="flush-collapseCocteles">Cocteles</button>
+										</h2>
+										<div id="cocteles" class="accordion-collapse collapse"
+											aria-labelledby="flush-headingCocteles"
+											data-bs-parent="#accordionCoctelesFlush">
+											<div id="colorNavidadFondo" class="accordion-body">
+
+												<table id="tablaComidas">
+													<thead>
+														<tr>
+															<th></th>
+															<th id="tablaCabecera"><strong>Precio</strong></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td id="tituloBody" th:text="'Nacional'" />
+															<td id="preciosBody" th:text="'4,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Importación'" />
+															<td id="preciosBody" th:text="'4,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Especial'" />
+															<td id="preciosBody" th:text="'5,00 €'" />
+														</tr>
+														<tr>
+															<td id="subtituloBodyCursiva"
+																th:text="'(Bombay, Saphire o Master)'">
+														</tr>
+														<tr>
+															<td id="tituloBody"
+																th:text="'Chivas,E. Negra,Barcelo Imperial '" />
+															<td id="preciosBody" th:text="'7,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Cacique 500'" />
+															<td id="preciosBody" th:text="'6,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Ginebras Premium'" />
+															<td id="preciosBody" th:text="'7,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Jack Daniels'" />
+															<td id="preciosBody" th:text="'5,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Cremas Especiales'" />
+															<td id="preciosBody" th:text="'3,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody"
+																th:text="'Licores sin Alcohol y Melody'" />
+															<td id="preciosBody" th:text="'2,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Copas Nacional'" />
+															<td id="preciosBody" th:text="'2,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Copas Importación'" />
+															<td id="preciosBody" th:text="'2,50 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Champagne Freixenet'" />
+															<td id="preciosBody" th:text="'13,00 €'" />
+														</tr>
+														<tr>
+															<td id="tituloBody" th:text="'Chupitos'" />
+															<td id="preciosBody" th:text="'2,00 €'" />
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Lotes -->
+									<!-- ##### -->
+									<div id="nieve" th:replace="comidas/lotes"></div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="flush-headingPescado">
+			<button
+				class="accordion-button collapsed btn btn-outline-success btn-sm"
+				type="button" data-bs-toggle="collapse" data-bs-target="#pescado"
+				aria-expanded="false" aria-controls="flush-collapsePescado">Pescado</button>
+		</h2>
+		<div id="pescado" class="accordion-collapse collapse"
+			aria-labelledby="flush-headingPescado"
+			data-bs-parent="#accordionFlushExample">
+			<div id="colorNavidadFondo" class="accordion-body">
+				<table id="tablaComidas">
+					<thead>
+						<tr>
+							<th></th>
+							<th id="tablaCabecera"><strong>Precio</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="tituloBody" th:text="'Calamares Fritos'" />
+							<td id="preciosBody" th:text="'13,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody"><img
+								th:src="@{/images/alergenos/Moluscos.jpg}" alt="Moluscos"
+								style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+								data-placement="lef" title="Moluscos"></td>
+							<td />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Atún con costra de frutos secos'" />
+							<td id="preciosBody" th:text="'13,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody"><img
+								th:src="@{/images/alergenos/Gluten.jpg}" alt="Gluten"
+								style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+								data-placement="lef" title="Gluten"> <img
+								th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescados"
+								style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+								data-placement="lef" title="Pescados"></td>
+							<td />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Sepía a la plancha'" />
+							<td id="preciosBody" th:text="'13,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody"><img
+								th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescados"
+								style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+								data-placement="lef" title="Pescados"></td>
+							<td />
+						</tr>
+
+						<tr>
+							<td id="tituloBody" th:text="'Bacalao con cebolla caramelizada'" />
+							<td id="preciosBody" th:text="'13,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody"><img
+								th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescados"
+								style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+								data-placement="lef" title="Pescados"></td>
+							<td />
+						</tr>
+
+						<tr>
+							<td id="tituloBody" th:text="'Almejas a la marinera'" />
+							<td id="preciosBody" th:text="'12,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody"><img
+								th:src="@{/images/alergenos/Pescados.jpg}" alt="Pescados"
+								style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+								data-placement="lef" title="Pescados"></td>
+							<td />
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

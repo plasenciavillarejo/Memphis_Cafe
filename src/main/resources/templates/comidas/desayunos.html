@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="accordion-item ">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse"
+								data-bs-target="#desayunos" aria-expanded="false"
+								aria-controls="flush-collapseOne">Desayunos</button>
+						</h2>
+						<div id="desayunos" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+							data-bs-parent="#accordionFlushExample">
+							<div id="colorNavidadFondo" class="accordion-body">
+								<table id="tablaComidas">
+									<thead>
+										<tr>
+											<th></th>
+											<th id="tablaCabecera"><strong>Media</strong></th>
+											<th id="tablaCabecera"><strong>Entera</strong></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con aceite'" />
+											<td id="preciosBody" th:text="'1,10 €'" />
+											<td id="preciosBody" th:text="'2,20 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con aceite y tomate'" />
+											<td id="preciosBody" th:text="'1,30 €'" />
+											<td id="preciosBody" th:text="'2,60 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con jamón'" />
+											<td id="preciosBody" th:text="'1,90 €'" />
+											<td id="preciosBody" th:text="'3,80 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con jamón cocido'" />
+											<td id="preciosBody" th:text="'1,90 €'" />
+											<td id="preciosBody" th:text="'3,90 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con queso'" />
+											<td id="preciosBody" th:text="'1,90 €'" />
+											<td id="preciosBody" th:text="'3,90 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con atún'" />
+											<td id="preciosBody" th:text="'1,90 €'" />
+											<td id="preciosBody" th:text="'3,90 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con caballa'" />
+											<td id="preciosBody" th:text="'1,90 €'" />
+											<td id="preciosBody" th:text="'3,90 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Tostada con patés'" />
+											<td id="preciosBody" th:text="'1,90 €'" />
+											<td id="preciosBody" th:text="'3,90 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Gratinada'" />
+											<td id="preciosBody" th:text="'2,70 €'" />
+											<td id="preciosBody" th:text="'5,0 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Mantequilla y mermelada'" />
+											<td id="preciosBody" th:text="'1,90 €'" />
+											<td id="preciosBody" th:text="'3,90 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Pulga de Jamón'" />
+											<td id="preciosBody" th:text="'1,40 €'" />
+											<td id="preciosBody" th:text="'2,80 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Pulga de Tomate'" />
+											<td id="preciosBody" th:text="'1,00 €'" />
+											<td id="preciosBody" th:text="'2,00 €'" />
+										</tr>
+										<tr>
+											<td />
+											<td id="ingredientesExtras" colspan="2"><i>Ingrediente
+													Extra 0,20 €</i></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+</body>
+</html>

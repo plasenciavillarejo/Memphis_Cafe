@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div class="accordion-item ">
+		<h2 class="accordion-header" id="flush-headingOne">
+			<button
+				class="accordion-button collapsed btn btn-outline-success btn-sm"
+				type="button" data-bs-toggle="collapse" data-bs-target="#reposteria"
+				aria-expanded="false" aria-controls="flush-collapseOne">Repostería</button>
+		</h2>
+		<div id="reposteria" class="accordion-collapse collapse"
+			aria-labelledby="flush-headingOne"
+			data-bs-parent="#accordionFlushExample">
+			<div id="colorNavidadFondo" class="accordion-body">
+				<table id="tablaComidas">
+					<thead>
+						<tr>
+							<th></th>
+							<th id="tablaCabecera"><strong>Precio</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="tituloBody" th:text="'Bandejita de Dulces'" />
+							<td id="preciosBody" th:text="'14,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Bubble Waffle'" />
+							<td id="preciosBody" th:text="'6,00 €'" />
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Monstruo Batido'" />
+							<td id="preciosBody" th:text="'6,00 €'" />
+						</tr>
+						<tr>
+							<td><br></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td id="tituloBody" th:text="'Bollería Industrial'" />
+							<td />
+						</tr>
+						<tr>
+							<td id="subtituloBody" th:text="'Gofre'" />
+							<td id="preciosBody" th:text="'1,30 €'" />
+						</tr>
+						<tr>
+							<td id="subtituloBody" th:text="'Bollicao'" />
+							<td id="preciosBody" th:text="'1,50 €'" />
+						</tr>
+						<tr>
+							<td id="subtituloBody" th:text="'Donuts'" />
+							<td id="preciosBody" th:text="'1,00 €'" />
+						</tr>
+						<tr>
+							<td id="subtituloBody" th:text="'Donetes'" />
+							<td id="preciosBody" th:text="'1,50 €'" />
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

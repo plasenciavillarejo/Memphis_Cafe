@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingCarne">
+							<button
+								class="accordion-button collapsed btn btn-outline-success btn-sm"
+								type="button" data-bs-toggle="collapse" data-bs-target="#carne"
+								aria-expanded="false" aria-controls="flush-collapseCarne">Carnes</button>
+						</h2>
+						<div id="carne" class="accordion-collapse collapse"
+							aria-labelledby="flush-headingCarne"
+							data-bs-parent="#accordionFlushExample">
+							<div id="colorNavidadFondo" class="accordion-body">
+
+								<table id="tablaComidas">
+									<thead>
+										<tr>
+											<th></th>
+											<th id="tablaCabecera"><strong>Precio</strong></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td id="tituloBody" th:text="'Solomillo al Pedro Ximénez'" />
+											<td id="preciosBody" th:text="'13,00 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody"><img
+												th:src="@{/images/alergenos/Sulfitos.jpg}" alt="Sulfitos"
+												style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+												data-placement="lef" title="Sulfitos"></td>
+											<td />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Solomillo al Cabrales'" />
+											<td id="preciosBody" th:text="'13,00 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody"><img
+												th:src="@{/images/alergenos/Sulfitos.jpg}" alt="Sulfitos"
+												style="max-width: 22px; width: 10%;" data-toggle="tooltip"
+												data-placement="lef" title="Sulfitos"></td>
+											<td />
+										</tr>
+										<tr>
+											<td id="tituloBody"
+												th:text="'Lagarto Ibérico con Patatas panaderas'" />
+											<td id="preciosBody" th:text="'13,00 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody" th:text="'Secreto Ibérico'" />
+											<td id="preciosBody" th:text="'13,00 €'" />
+										</tr>
+										<tr>
+											<td id="tituloBody"
+												th:text="'Chuletillas de cordero'" />
+											<td id="preciosBody" th:text="'14,00 €'" />
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+					</div>
+</body>
+</html>
