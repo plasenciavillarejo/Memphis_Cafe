@@ -71,13 +71,24 @@ table {
 	color:white;
 }
 
-/*  Hacerlo fijo el pie de página 
+/*  Hacerlo fijo la cabecera y pie de página */
+/* 
 #piePagina{
+	bottom: 0;
 	position: fixed;
-	bottom: 0%;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+#cabeceraFija {
+	top: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
 }
 */
-
 
 .btn-outline-success:hover{
 	background-color: #43b39b;	
