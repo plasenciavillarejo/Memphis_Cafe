@@ -122,7 +122,7 @@
 		
 
 		<script th:src="@{/js/jquery-3.4.1.min.js}"></script>
-		<script th:src="@{/js/popper.min.js}"></script>
+		<!-- <script th:src="@{/js/popper.min.js}"></script> -->
 		<!-- Comenta está versión ya que en los navegaodres de IOS no funciona el PopOver al desplegarlo. Lo cambio por bootstrap.bundle.min.js
 		<script th:src="@{/js/bootstrap.min.js}"></script>  -->
 		
@@ -140,8 +140,13 @@
 		<!-- ##################################### -->
 		<script type="text/javascript">
 		
-		// Abre el popover al pulsar sobre el.
+		// Activa los tooltips
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
 
+		
+		// Abre el popover al pulsar sobre el.
 			$(function() {
 				$('[data-bs-toggle="popover"]').popover();
 			});
