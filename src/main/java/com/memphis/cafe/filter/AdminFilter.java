@@ -1,4 +1,4 @@
-package com.memphis.filter;
+package com.memphis.cafe.filter;
 
 import java.io.IOException;
 import java.security.SecureRandom;

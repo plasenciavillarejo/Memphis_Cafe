@@ -4,7 +4,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-import com.memphis.filter.AdminFilter;
+import com.memphis.cafe.filter.AdminFilter;
 
 @Component
 public class RegistrationFilter {
